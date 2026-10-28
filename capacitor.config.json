@@ -1,0 +1,17 @@
+{
+  "appId": "app.jiluya.recorder",
+  "appName": "记录鸭",
+  "webDir": "www",
+  "server": {
+    "androidScheme": "https"
+  },
+  "android": {
+    "allowMixedContent": false,
+    "captureInput": true,
+    "webContentsDebuggingEnabled": false,
+    "loggingEnabled": false
+  },
+  "ios": {
+    "contentInset": "always"
+  }
+}

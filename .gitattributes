@@ -1,0 +1,7 @@
+# 统一按 LF 存文本，避免 Windows/Linux 之间来回产生换行符改动
+* text=auto eol=lf
+
+# 二进制文件不参与换行转换
+*.png binary
+*.jpg binary
+*.apk binary

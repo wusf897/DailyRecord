@@ -1,0 +1,43 @@
+{
+  "name": "记录鸭 - 日常记录与习惯打卡",
+  "short_name": "记录鸭",
+  "description": "分门别类记录日常频次，格点与日历回看过往，两部手机之间一键搬家。数据只存在本机。",
+  "id": "jlduck",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui"],
+  "orientation": "portrait",
+  "background_color": "#f4f6f8",
+  "theme_color": "#f4f6f8",
+  "lang": "zh-CN",
+  "dir": "ltr",
+  "categories": ["lifestyle", "productivity", "health"],
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "记一笔",
+      "short_name": "记一笔",
+      "url": "./index.html"
+    }
+  ]
+}

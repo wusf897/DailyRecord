@@ -1,0 +1,26 @@
+{
+  "name": "jiluya",
+  "version": "1.0.0",
+  "private": true,
+  "description": "记录鸭 - 分门别类记录日常频次、可跨设备搬家的记录 App",
+  "scripts": {
+    "start": "node serve.js",
+    "build:web": "node scripts/build-web.mjs",
+    "cap:init": "npx cap add android",
+    "cap:sync": "npm run build:web && npx cap sync android",
+    "cap:open": "npx cap open android",
+    "cap:patch": "node scripts/patch-android.mjs",
+    "apk:debug": "npm run cap:sync && npm run cap:patch && cd android && ./gradlew assembleDebug",
+    "test": "node tests/store.test.js && node tests/ui.test.js",
+    "test:browser": "node tests/browser.test.js && node tests/nav.test.js && node tests/entry.test.js"
+  },
+  "dependencies": {
+    "@capacitor/core": "^6.1.2"
+  },
+  "devDependencies": {
+    "@capacitor/android": "^6.1.2",
+    "@capacitor/cli": "^6.1.2",
+    "jsdom": "^30.0.0",
+    "playwright-core": "^1.49.0"
+  }
+}
